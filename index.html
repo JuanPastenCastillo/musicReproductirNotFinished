@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta content="IE=edge" http-equiv="X-UA-Compatible">
+ <meta content="width=device-width, initial-scale=1.0" name="viewport">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+ <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dancing+Script&family=Tenali+Ramakrishna&display=swap">
+ <link href="./main.css" rel="stylesheet">
+ <link href="#" rel="shortcut icon">
+ <title>Audio example</title>
+</head>
+
+<body>
+
+ <!-- <input type="file" id="files" name="files[]" multiple> -->
+
+
+ <!-- <div class="container">
+  <div class="button-wrap">
+   <label class="buttonAddMultiple" for="files">Add multiples songs</label>
+   <input type="file" id="files" name="files[]" multiple class="buttonAddMultiple">
+   <ol id="playlist"></ol>
+  </div>
+ </div> -->
+
+ <div class="container">
+  <div class="button-wrap">
+   <input type="file" id="files" name="files[]" multiple style="display: none" />
+
+   <input type="button" value="Add multiples songs" id="fakeBrowse" class="customButtons"
+    onclick="addMultiplesSongs();" />
+  </div>
+ </div>
+
+ <div class="container">
+  <div class="button-wrap">
+   <input type="button" id="deleteFiles" class="customButtons" value="Delete all">
+  </div>
+ </div>
+
+ <div class="container">
+  <div class="button-wrap">
+   <input type="file" id="filelist" name="filelist" multiple="" webkitdirectory="" style="display: none">
+   <input type="button" value="Add a folder" class="customButtons" onclick="addFolder();" />
+  </div>
+ </div>
+
+ <input type="button" value="Remove selected" class="customButtons" id="buttonRemoveSelected">
+
+
+ <div class="player">
+  <audio class="audioOne">
+   <source src="./audios/BussinMoves.mp3" type="audio/mp3"> 
+   <!-- <source src="./audios/doYourThing.mp3" type="audio/mp3"> -->
+   <!-- <source src="./audios/shortVideo.mp3" type="audio/mp3"> -->
+  </audio>
+
+
+
+  <div class="containerOfSongs">
+   <ol class="toDisplaySongsName"></ol>
+   
+  </div>
+
+
+
+
+  <div class="controls">
+   <button class="play" data-icon="P" aria-label="play pause toggle"></button>
+   <button class="stop" data-icon="S" aria-label="stop"></button>
+
+   <div class="timer">
+    <div></div>
+    <span aria-label="timer">00:00:00</span>
+    <span class="tooltiptext"></span>
+   </div>
+
+   <button class="rwd" data-icon="B" aria-label="rewind"></button>
+   <button class="fwd" data-icon="F" aria-label="fast forward"></button>
+
+   <!-- <button class="" data-icon="p"></button> -->
+   <!-- <button class="" data-icon="j"></button> -->
+   
+   <button class="volume" data-icon="g" aria-label="volume control">
+   </button>
+   <input type="range" class="volumeRange" min=0 max=1 step=0.01 orient="vertical">
+
+  </div>
+ </div>
+
+ <!-- <input type="file" name="" id="" multiple class="filesUpload"> -->
+
+
+
+ <script src="./main.js"></script>
+
+</body>
+
+</html>
